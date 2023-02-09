@@ -525,10 +525,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -781,8 +777,8 @@ video {
     line-height: 2.5rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
