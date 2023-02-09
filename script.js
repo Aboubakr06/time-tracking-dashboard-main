@@ -1,5 +1,11 @@
 let periods = ['.daily', '.weekly', '.monthly'];
-let categories = [{ current: '.work-current', last: '.work-last' }, { current: '.play-current', last: '.play-last' }, { current: '.study-current', last: '.study-last' }, { current: '.exercise-current', last: '.exercise-last' }, { current: '.social-current', last: '.social-last' }, { current: '.care-current', last: '.care-last' }];
+let categories = [
+  { current: '.work-current', last: '.work-last' },
+  { current: '.play-current', last: '.play-last' },
+  { current: '.study-current', last: '.study-last' },
+  { current: '.exercise-current', last: '.exercise-last' },
+  { current: '.social-current', last: '.social-last' },
+  { current: '.care-current', last: '.care-last' }];
 
 let currentPeriod;
 let values = {
