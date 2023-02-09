@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/)
+- Solution URL: (https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-tailwindcss-gNjZRVPHFk)
 - Live Site URL: (https://musical-dieffenbachia-4c08a8.netlify.app/)
 
 ## My process
