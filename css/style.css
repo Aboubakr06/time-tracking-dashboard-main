@@ -660,11 +660,6 @@ video {
   font-family: Rubik, sans-serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -678,11 +673,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-light {
@@ -782,28 +772,13 @@ video {
     line-height: 2.5rem;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
