@@ -1,4 +1,5 @@
 let periods = ['.daily', '.weekly', '.monthly'];
+
 let categories = [
   { current: '.work-current', last: '.work-last' },
   { current: '.play-current', last: '.play-last' },
@@ -49,4 +50,12 @@ periods.forEach(function (period) {
       document.querySelector(category.last).innerHTML = values[currentPeriod][index].last;
     });
   });
+});
+
+currentPeriod = 'weekly';
+document.querySelector('.weekly').classList.add('text-white');
+
+categories.forEach(function(category, index) {
+  document.querySelector(category.current).innerHTML = values[currentPeriod][index].current;
+  document.querySelector(category.last).innerHTML = values[currentPeriod][index].last;
 });
