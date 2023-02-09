@@ -533,6 +533,10 @@ video {
   width: 5rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
