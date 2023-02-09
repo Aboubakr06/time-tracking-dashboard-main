@@ -16,6 +16,7 @@
     
     --neutral-dark-blue:    hsl(226, 43%, 10%);
     --neutral-blue:         hsl(235, 46%, 20%);
+    --neutral-blue-hover:   hsl(235, 46%, 35%);
     --neutral-violet:       hsl(235, 45%, 61%);
     --neutral-light-violet: hsl(236, 100%, 87%);
 }
