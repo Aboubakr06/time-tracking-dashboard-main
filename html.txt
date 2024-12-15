@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-Rubik font-normal text-lg bg-[var(--neutral-dark-blue)] text-white">
+  <main class="grid gap-8 px-6 py-28 lg:px-32 lg:py-36 lg:grid-cols-4 lg:grid-rows-2">
+
+    <div class="rounded-2xl bg-[var(--neutral-blue)] lg:row-span-2 lg:grid">
+      <div class="flex items-center gap-4 bg-[var(--primary-blue)] rounded-2xl p-8 lg:grid lg:gap-8 lg:pb-24">
+        <img class="rounded-full w-16 border-4 border-solid border-white lg:w-20" src="images/image-jeremy.png"
+          alt="Jeremy's avatar">
+        <h1 class="font-light text-xl lg:text-4xl">
+          <span class="block text-sm text-[var(--neutral-light-violet)]">Report for</span>
+          Jeremy Robson
+        </h1>
+      </div>
+      <div class="flex items-center justify-between text-[var(--neutral-violet)] text-xl p-8 lg:grid lg:gap-4">
+        <a class="daily cursor-pointer hover:text-white">Daily</a>
+        <a class="weekly cursor-pointer hover:text-white">Weekly</a>
+        <a class="monthly cursor-pointer hover:text-white">Monthly</a>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-orange)] bg-[url('/images/icon-work.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Work</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="work-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="work-last"></span>hrs <!-- weekly --></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-light-blue)] bg-[url('/images/icon-play.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Play</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="play-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="play-last"></span>hrs <!-- weekly --></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-red)] bg-[url('/images/icon-study.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Study</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="study-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="study-last"></span>hrs <!-- weekly --></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-green)] bg-[url('/images/icon-exercise.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Exercise</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="exercise-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="exercise-last"></span>hrs <!-- weekly --></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-violet)] bg-[url('/images/icon-social.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Social</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="social-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="social-last"></span>hrs <!-- weekly --></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl pt-12 bg-[var(--primary-yellow)] bg-[url('/images/icon-self-care.svg')] bg-no-repeat bg-[right_1rem_top]">
+      <div class="grid gap-4 rounded-2xl p-8 bg-[var(--neutral-blue)] cursor-pointer hover:bg-[var(--neutral-blue-hover)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-medium">Self Care</h2>
+          <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+        </div>
+        <div class="flex items-center gap-4 justify-between lg:grid">
+
+          <p class="font-light text-xl lg:text-6xl"><span class="care-current"></span>hrs <!-- weekly --></p>
+          <p class="text-[var(--neutral-light-violet)] lg:text-base">Last <span class="care-last"></span>hrs <!-- weekly --></p>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
