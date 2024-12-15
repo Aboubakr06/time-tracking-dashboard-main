@@ -27,8 +27,8 @@ const populate = (data) => {
   })
 }
 
-const changePeriod = (idElements, data) => {
-  const periodEls = document.querySelectorAll(idElements);
+const changePeriod = (classElements, data) => {
+  const periodEls = document.querySelectorAll(classElements);
   periodEls.forEach(periodEl => {
     periodEl.addEventListener('click', () =>{
       periodEls.forEach(periodEl => {periodEl.classList.remove('text-white');});
@@ -42,11 +42,11 @@ const changePeriod = (idElements, data) => {
 
 const timesPeriod = (keys) => {
   for (let keyEl of keys){
-    const domElement = `<a class="cursor-pointer hover:text-white" id="period">${keyEl}</a>`
+    const domElement = `<a class="cursor-pointer hover:text-white period">${keyEl}</a>`
     timeEl.innerHTML += domElement;
   }
 
-  const periodEls = document.querySelectorAll("#period");
+  const periodEls = document.querySelectorAll(".period");
   periodEls[1].classList.add("text-white");
 }
 
@@ -68,6 +68,6 @@ fetch('./data.json').then((response) => {
 
   populate(filterData(data, "weekly"));
 
-  changePeriod("#period", data);
+  changePeriod(".period", data);
 });
 
